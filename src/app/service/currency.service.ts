@@ -34,7 +34,7 @@ baseUrl : any = `https://v6.exchangerate-api.com/v6/715f95325581575819f3bb2f/lat
 
 
   fetchcurrencyurl(baseurl : string){
-    let currUrl = `${this.currencyUrl}/${this.apiKey}/latest/USD`
-    return this._http.get<any>(currUrl)
+    
+    return this._http.get<any>(this.baseUrl)
   }
 }
